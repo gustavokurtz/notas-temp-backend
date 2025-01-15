@@ -1,0 +1,8 @@
+-- CreateTable
+CREATE TABLE "Note" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "content" TEXT NOT NULL,
+    "expiresAt" DATETIME NOT NULL,
+    "hasBeenViewed" BOOLEAN NOT NULL DEFAULT false,
+    "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
